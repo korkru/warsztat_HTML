@@ -1,0 +1,172 @@
+@font-face {
+    font-family: "raleway-regular";
+    src: url("../fonts/raleway-regular.woff2") format("woff2"),
+         url("../fonts/raleway-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+  font-family: "raleway-regular";
+
+}
+
+.mainWidth {
+  width: 700px;
+  margin: 0 auto;
+  /*środkuje zawartość*/
+}
+
+p {
+  margin: 0;
+}
+
+#header {
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+}
+
+#topLogo {
+  float: left;
+  font-family: "raleway-regular";
+  font-size: 18px;
+  color: white;
+  margin: 0;
+}
+
+
+#menu ul {
+  margin: 0;
+
+}
+
+
+#menu ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+li {
+  float: right;
+  font-family: "raleway-regular";
+  font-size: 18px;
+  color: white;
+
+}
+
+.clear {
+  clear: both;
+}
+
+#slider {
+  height: 380px;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+#leftSlide {
+  float: left;
+
+}
+
+#rightText {
+  float: right;
+
+}
+
+h1 {
+  font-size: 26px;
+  padding: 25px;
+
+}
+
+p {
+  font-size: 14px;
+  position: relative;
+}
+
+#seeMore {
+  position: absolute;
+  margin-top: 20px;
+
+}
+
+.green {
+  color:#2AE2AE;
+}
+
+li {
+display: inline-block;
+width:80px;
+}
+
+ul.main > li {
+position: relative;
+line-heigh: 30px;
+}
+
+ul.main ul {
+position: absolute;
+top:30px;
+color; #fff;
+display: none;
+}
+ul.main ul > li {
+background: gray;
+}
+
+ul.main li :hover > ul {
+display:block;
+}
+
+ul, li {
+margin:0;
+padding:0;
+list-style:none;
+}
+
+.button {
+  background-color: #2AE2AE;
+  border-radius: 10%;
+  padding: 5px;
+}
+
+#photoDisplay {
+  display: inline-block;
+}
+
+#photoFirst {
+  background-image: url("../images/box1_img.jpg");
+  float: left;
+  height: 134px;
+  width: 29.615861214%;
+  margin:1.858736059%;
+}
+
+#photoSecond {
+  background-image: url("../images/box2_img.jpg");
+  float: left;
+  height: 134px;
+  width: 29.615861214%;
+  margin:1.858736059%;
+}
+
+#textThird {
+  float: left;
+  width: 29.615861214%;
+  margin:1.858736059%;
+}
+
+#pricelist {
+  display: inline-block;
+}
+
+.plan {
+  float: left;
+  width: 29.615861214%;
+  margin:1.858736059%;
+
+}
