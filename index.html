@@ -1,129 +1,200 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
+
 <head>
     <meta charset="UTF-8">
-    <title>Sit <span class="green">on</span> our chair</title>
+    <title>Sit on our chair</title>
     <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<div id="header">
-  <div class="mainWidth">
-  <p id="topLogo">SIT <span class="green">ON</span> OUR <span class="green">CHAIR</span></p>
-  <div id="menu">
-    <ul class="main">
-      <li><a href="#">O FIRMIE</a>
-        <ul>
-          <li>podmenu1</li>
-          <li>podmenu2</li>
-        </ul>
-      </li>
-      <li>GALERIA</li>
-      <li>KONTAKT</li>
-    </ul>
-  </div>
-    <div class="clear"></div>
-  </div>
-</div>
-
-<div id="slider">
-  <div class="mainWidth">
-  <div id="container1">
-    <div><!--strzałka--></div>
-    <div id="leftSlide"><img src="images/black_chair.png"></div>
-    <div id="rightTEXT">
-      <h1>Sit <span class="green">on</span> our <span class="green">chair</span></h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <span class="button" id="seeMore">Zobacz więcej</span>
+    <div id="header">
+        <div class="mainWidth">
+            <p id="topLogo">SIT <span class="green">ON</span> OUR <span class="green">CHAIR</span></p>
+            <div id="menu">
+                <ul class="main">
+                    <li>o firmie</li>
+                    <li>galeria</li>
+                    <li>kontakt</li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
     </div>
-    <div><!--strzałka--></div>
-    </div>
-</div>
-</div>
-<div class="clear"></div>
 
 
-  <div class="mainWidth" id="photoDisplay">
-  <div id="photoFirst">
-    <div id="titleFirst"><h4>Chair Clair</h4></div>
+
+    <div id="slider">
+        <div class="mainWidth" id="main">
+            <div class="arrow" id="arrow1">
+                < </div>
+                    <div id="leftSlide"><img id="blackChair" src="images/black_chair.png"></div>
+                    <div id="rightText">
+                        <h1>Sit <span class="green">on</span> our <span class="green">chair</span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div id="seeMore"><a class="button">Zobacz więcej</a></div>
+                    </div>
+                    <div class="arrow" id="arrow2">
+                        >
+                    </div>
+            </div>
+        </div>
+
+
+        <div class="clear"></div>
+
+
+
+        <div class="mainWidth">
+            <div id="photoDisplay">
+                <div id="photoFirst" class="photo">
+                    <div class="titleF">
+                        <div class="border1">
+                            <h4 class="photoH1">Chair <span class="uppercase">Clair</span></h4></div>
+                    </div>
+                </div>
+                <div id="photoSecond" class="photo">
+                    <div class="titleF">
+                        <div class="border1">
+                            <h4 class="photoH1">Chair <span class="uppercase">Margarita</span></h4></div>
+                    </div>
+                </div>
+                <div id="textThird" class="photo">
+                    <div class="border1">
+                        <h4 class="photoH2" id="h3">Finds all inputs</h4> </div>
+                    <p>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking thr checkboxes since no click event have been linked.</p>
+                    <p>Notice there is no change when clicking the checkboxes since no click events have been linked.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <section id="prices">
+            <div class="mainWidth">
+                <div class="border2">
+                    <h4><span class="uppercase">cennik</span></h4></div>
+                <div id="pricelist">
+                    <div class="plan" id="plan1">
+                        <div class="topDrop"></div>
+                        <h4><span class="green"><span class="uppercase">basic plan</span></span></h4>
+                        <div class="price">
+                            <p class="number">85<span class="smaller">99</span></p>
+                            <p class="uppercase pln">pln/msc</p>
+                        </div>
+                        <div class="table">
+                            <p class="row1">Zakup towaru + dowóz</p>
+                            <p class="row2">Serwis</p>
+                        </div>
+                        <div class="buttonPrice uppercase">dołącz</div>
+                        <div class="circle">
+                            <div class="bigCircle">
+                                <div class="smallCircle"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="plan" id="plan2">
+                        <div class="topDrop"></div>
+                        <h4><span class="uppercase">standard plan</span></h4>
+                        <div class="price" id="priceGreen">
+                            <p class="number">95<span class="smaller">99</span></p>
+                            <p class="uppercase pln">pln/msc</p>
+                        </div>
+
+                        <div class="table">
+                            <p class="row1 rowWhite">Zakup towaru + dowóz</p>
+                            <p class="row2">Serwis</p>
+                            <p class="row3 rowWhite">Gwarancja 5 lat</p>
+                        </div>
+                        <div class="buttonPrice green uppercase" id="button2">dołącz</div>
+                        <div class="circle">
+                            <div class="bigCircle" id="greenBigCircle">
+                                <div class="smallCircle" id="whiteSmallCircle"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="plan" id="plan3">
+                        <div class="topDrop"></div>
+                        <h4><span class="green"><span class="uppercase">advance plan</span></span></h4>
+                        <div class="price">
+                            <p class="number">211<span class="smaller">00</span></p>
+                            <p class="uppercase pln">pln/msc</p>
+                        </div>
+                        <div class="table">
+                            <p class="row1">Zakup towaru + dowóz</p>
+                            <p class="row2">Serwis</p>
+                            <p class="row3">Gwarancja 6 lat</p>
+                            <p class="row4">Porady projektanta</p>
+                        </div>
+                        <div class="buttonPrice uppercase">dołącz</div>
+                        <div class="circle">
+                            <div class="bigCircle">
+                                <div class="smallCircle"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <div class="clear"></div>
+
+
+
+        <div class="mainWidth">
+
+            <div class="border2">
+                <h2>Kontakt</h2></div>
+
+            <div id="container">
+
+                <div id="formImage">
+
+                    <input type="text" name="imię" placeholder="Imię" />
+                    <input type="text" name="email" placeholder="email" />
+                    <textarea type="text" name="wiadomość" placeholder="Wiadomość"></textarea>
+
+                </div>
+
+
+
+                <div id="right">
+                    <img id="redChair" src="images/red_chair.png" />
+                    <div>
+                        <input type="checkbox" name="select" id="checkbox" />
+                        <p>Zgadzam się na przetwarzanie
+                            <br/>danych osobowych</p>
+                    </div>
+                    <div id="submit" class="uppercase">wyślij</div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="mainWidth footer">
+                <div id="copyR">Copyright 2014| All Rights Reserved. - Sit On Chair
+                </div>
+
+
+              <div id="logo" class="uppercase">sit <span>on</span> chair</div>
+
+              <div id="social">
+                <img src="images/flickr.png"/>
+                <img src="images/vimeo.png"/>
+                <img src="images/pinterest.png"/>
+                <img src="images/twitter.png"/>
+
+              </div>
   </div>
-  <div id="photoSecond">
-    <div id="titleSecond"><h4>Chair Margarita<h4></div>
-  </div>
-  <div id="textThird"><p>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clickinf the checkboxes since no click events have been linked</p><p>Notice there is no change when clicking the checkboxes since no click events have been</p>
-    <div id="titleThird"><h4>Finds all inputs</h4></div>
-  </div>
-</div>
 
-<div class="clear"></div>
-
-
-<div id="pricelist">
-  <div class="mainWidth">
-    <h4>CENNIK</h4>
-
-    <div class="plan">
-    <div id="topDrop"></div>
-    <h4><span class="green">BASIC PLAN</span></h4>
-    <div id="price">85<sup>99</sup></br>PLN/MSC</div>
-    <p>Zakup towaru + dowóz</p>
-    <p>Serwis</p>
-    <span class="button">DOŁĄCZ</span>
-  </div>
-
-  <div class="plan" id="planGreen">
-  <div id="topDrop"></div>
-  <h4>STANDARD PLAN</h4>
-  <div id="price">95<sup>99</sup></br>PLN/MSC</div>
-  <p>Zakup towaru + dowóz</p>
-  <p>Serwis</p>
-  <p>Gwarancja 5 lat</p>
-  <span class="button"><span class="green">DOŁĄCZ</span></span>
-</div>
-
-<div class="plan">
-<div id="topDrop"></div>
-<h4><span class="green">ADVANCE PLAN</span></h4>
-<div id="price">211<sup>00</sup></br>PLN/MSC</div>
-<p>Zakup towaru + dowóz</p>
-<p>Serwis</p>
-<p>Gwarancja 6 lat</p>
-<p>Porady projektanta</p>
-<span class="button">DOŁĄCZ</span>
-</div>
-
-    </div>
-</div>
-
-
-
-<div class="mainWidth">
-<div>
-  <h2>Kontakt</h2>
-  <div id="form">
-    <input type"text" name"imię" placeholder="imię"</input>
-    <input type"text" name"email" placeholder="email"</input>
-    <input type"text" name"wiadomość" placeholder="wiadomość"</input>
-
-  </div>
-</div>
-
-
-<div>
-  <img src="images/red_chair.png">
-  <div id="formCheck"></div>
-  <button>WYŚLIJ</button>
-</div>
-</div>
-
-
-
-<div id="fotter">
-  <div><p>Copyright 2014| All Rights Reserved. - Sit On Chair</p></div>
-  <div><div id:="social"</div>
-  <div>SIT ON CHAIR</div>
-</div>
 
 
 </body>
+
 </html>

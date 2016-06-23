@@ -1,172 +1,414 @@
 @font-face {
     font-family: "raleway-regular";
-    src: url("../fonts/raleway-regular.woff2") format("woff2"),
-         url("../fonts/raleway-regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+    src: url("../fonts/raleway-regular.woff2") format("woff2"), url("../fonts/raleway-regular.woff") format("woff");
 }
-
-
-
 body {
-  font-family: "raleway-regular";
-
+    font-family: "raleway-regular";
+    margin: 0;
+    padding: 0;
 }
-
 .mainWidth {
-  width: 700px;
-  margin: 0 auto;
-  /*środkuje zawartość*/
+    width: 1067px;
+    margin: 0 auto;
+    /*środkuje zawartość*/
 }
-
 p {
-  margin: 0;
+    margin: 0;
 }
-
 #header {
-  width: 100%;
-  background-color: black;
-  padding: 10px;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
 }
-
 #topLogo {
-  float: left;
-  font-family: "raleway-regular";
-  font-size: 18px;
-  color: white;
-  margin: 0;
+    float: left;
+    font-family: "raleway-regular";
+    font-size: 18px;
+    color: white;
+    margin: 0;
 }
-
-
 #menu ul {
-  margin: 0;
-
+    margin: 0;
+    float: right;
 }
-
-
-#menu ul li{
-  display: inline-block;
-  margin-right: 20px;
+#menu ul li {
+    margin: 0 10px;
+    text-transform: uppercase;
+    float: left;
+    font-family: "raleway-regular";
+    font-size: 18px;
+    color: white;
 }
-
-li {
-  float: right;
-  font-family: "raleway-regular";
-  font-size: 18px;
-  color: white;
-
-}
-
 .clear {
-  clear: both;
+    clear: both;
 }
-
 #slider {
-  height: 380px;
-  width: 100%;
-  background-color: lightgrey;
+    height: 400px;
+    width: 100%;
+    background: background: rgba(226, 226, 226, 1);
+    background: -moz-linear-gradient(top, rgba(226, 226, 226, 1) 0%, rgba(254, 254, 254, 1) 0%, rgba(219, 219, 219, 1) 87%, rgba(209, 209, 209, 1) 99%, rgba(209, 209, 209, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226, 226, 226, 1)), color-stop(0%, rgba(254, 254, 254, 1)), color-stop(87%, rgba(219, 219, 219, 1)), color-stop(99%, rgba(209, 209, 209, 1)), color-stop(100%, rgba(209, 209, 209, 1)));
+    background: -webkit-linear-gradient(top, rgba(226, 226, 226, 1) 0%, rgba(254, 254, 254, 1) 0%, rgba(219, 219, 219, 1) 87%, rgba(209, 209, 209, 1) 99%, rgba(209, 209, 209, 1) 100%);
+    background: -o-linear-gradient(top, rgba(226, 226, 226, 1) 0%, rgba(254, 254, 254, 1) 0%, rgba(219, 219, 219, 1) 87%, rgba(209, 209, 209, 1) 99%, rgba(209, 209, 209, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(226, 226, 226, 1) 0%, rgba(254, 254, 254, 1) 0%, rgba(219, 219, 219, 1) 87%, rgba(209, 209, 209, 1) 99%, rgba(209, 209, 209, 1) 100%);
+    background: linear-gradient(to bottom, rgba(226, 226, 226, 1) 0%, rgba(254, 254, 254, 1) 0%, rgba(219, 219, 219, 1) 87%, rgba(209, 209, 209, 1) 99%, rgba(209, 209, 209, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#d1d1d1', GradientType=0);
 }
-
-#leftSlide {
-  float: left;
-
+#main {
+    height: auto;
 }
-
+.arrow {
+    height: 150px;
+    width: 60px;
+    font-size: 70px;
+    float: left;
+    color: #20b2aa;
+    margin-top: 150px;
+}
+#arrow2 {
+    float: right;
+}
+#blackChair {
+    margin-top: 35px;
+    width: 470px;
+    height: 337px;
+    float: left;
+}
 #rightText {
-  float: right;
-
+    width: 380px;
+    height: 300px;
+    float: left;
+    padding-top: 70px;
 }
-
 h1 {
-  font-size: 26px;
-  padding: 25px;
-
+    font-size: 30px;
+    padding: 25px;
+    text-transform: uppercase;
+    text-align: center;
 }
-
 p {
-  font-size: 14px;
-  position: relative;
+    font-size: 14px;
+    margin: 0px 20px 20px 35px;
+    text-align: center;
+    line-height: 20px;
 }
-
 #seeMore {
-  position: absolute;
-  margin-top: 20px;
-
+    font-size: 14px;
+    width: 200px;
+    background-color: #20b2aa;
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin: 10px 90px;
 }
-
 .green {
-  color:#2AE2AE;
+    color: #20b2aa;
 }
-
-li {
-display: inline-block;
-width:80px;
+.photo {
+    float: left;
+    margin: 20px 15px;
+    width: 329px;
+    height: 225px;
 }
-
-ul.main > li {
-position: relative;
-line-heigh: 30px;
-}
-
-ul.main ul {
-position: absolute;
-top:30px;
-color; #fff;
-display: none;
-}
-ul.main ul > li {
-background: gray;
-}
-
-ul.main li :hover > ul {
-display:block;
-}
-
-ul, li {
-margin:0;
-padding:0;
-list-style:none;
-}
-
-.button {
-  background-color: #2AE2AE;
-  border-radius: 10%;
-  padding: 5px;
-}
-
-#photoDisplay {
-  display: inline-block;
-}
-
 #photoFirst {
-  background-image: url("../images/box1_img.jpg");
-  float: left;
-  height: 134px;
-  width: 29.615861214%;
-  margin:1.858736059%;
+    background-image: url("../images/box1_img.jpg");
+    float: left;
+    position: relative;
+    margin-left: 0;
 }
-
+.titleF {
+    position: absolute;
+    background-color: rgba(250, 250, 250, .6);
+    width: 329px;
+    height: 40px;
+    margin-top: 170px;
+}
+.border1 {
+    margin-left: 10px;
+    width: 45%;
+    border-bottom: 4px solid #20b2aa;
+}
+.border1>h4 {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+.uppercase {
+    text-transform: uppercase;
+}
 #photoSecond {
-  background-image: url("../images/box2_img.jpg");
-  float: left;
-  height: 134px;
-  width: 29.615861214%;
-  margin:1.858736059%;
+    background-image: url("../images/box2_img.jpg");
+    position: relative;
 }
-
+#h3 {
+    margin-top: 20px;
+}
 #textThird {
-  float: left;
-  width: 29.615861214%;
-  margin:1.858736059%;
+    width: 329px;
+    height: 240px;
+    border: 2px solid lightgrey;
+    float: right;
 }
-
+#textThird> p {
+    text-align: justify;
+    margin: 15px;
+}
+#textThird> h4 {
+    margin: 20px 0 0 10px;
+    border-bottom: 4px solid ##20b2aa;
+}
+#prices {
+    height: 650px;
+    width: 100%;
+    background-color: rgb(234, 234, 234);
+    margin-top: 30px;
+}
 #pricelist {
-  display: inline-block;
+    position: relative;
+    margin-top: 80px;
 }
-
+.border2 {
+    width: 329px;
+    border-bottom: 4px solid #20b2aa;
+    position: relative;
+    top: 30px;
+}
+.border2>h4 {
+    margin-top: 20px;
+}
 .plan {
-  float: left;
-  width: 29.615861214%;
-  margin:1.858736059%;
-
+    width: 329px;
+    height: 450px;
+    border: 2px solid #d4d4d4;
+    text-align: center;
+    float: left;
+    margin-right: 20px;
+    background-color: #fcfcfc;
+    position: relative;
+    color: #a6a6a6;
+}
+.circle {
+    position: absolute;
+    width: 327px;
+    height: 40px;
+    top: -22px;
+}
+.bigCircle {
+    border: 2px solid #d4d4d4;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    left: 142px;
+}
+.smallCircle {
+    background-color: #d4d4d4;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.price {
+    border: 2px solid #d4d4d4;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    top: 30px;
+    left: 115px;
+}
+.price p:first-child {
+    position: relative;
+    top: 32px;
+    right: 8px;
+}
+.price p:nth-of-type(0n+2) {
+    position: relative;
+    top: 11px;
+    right: 9px;
+}
+.number {
+    font-size: 22px;
+    font-weight: bold;
+}
+.pln {
+    font-size: 9px;
+    position: relative;
+    top: -15px;
+}
+.smaller {
+    font-size: 9px;
+    position: relative;
+    top: -13px;
+}
+#priceGreen {
+    border: 2px solid #20b2aa;
+    color: #20b2aa;
+}
+#plan2 {
+    background-color: #20b2aa;
+}
+#greenBigCircle {
+    background-color: #20b2aa;
+    border: 2px solid #20b2aa;
+}
+#whiteSmallCircle {
+    background-color: white;
+}
+#plan2>h4 {
+    color: white;
+}
+.plan> h4 {
+    margin-top: 40px;
+}
+#plan2 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#plan3 {
+    float: right;
+    margin-right: 0;
+}
+.table {
+    position: relative;
+    top: 70px;
+}
+.table p {
+    font-size: 15px;
+}
+.row1 {
+    background-color: #dbdbdb;
+    width: 310px;
+    margin: 0;
+    padding: 10px;
+}
+.row2 {
+    background-color: #f2f2f2;
+    width: 309px;
+    margin: 0;
+    padding: 10px;
+}
+.row3 {
+    background-color: #dbdbdb;
+    width: 310px;
+    margin: 0;
+    padding: 10px;
+}
+.row4 {
+    background-color: #f2f2f2;
+    width: 309px;
+    margin: 0;
+    padding: 10px;
+}
+.rowWhite {
+    background-color: white !important;
+    width: 309px;
+    margin: 0;
+    padding: 10px;
+}
+.buttonPrice {
+    position: absolute;
+    top: 410px;
+    left: 110px;
+    width: 100px;
+    background-color: #20b2aa;
+    border-radius: 15px;
+    padding: 5px;
+    color: white;
+    font-size: 13px;
+}
+#button2 {
+    background-color: white;
+    color: #20b2aa;
+}
+#formImage {
+    position: relative;
+    top: 50px;
+    height: 155px;
+}
+#formImage input {
+    float: left;
+    width: 630px;
+    height: 40px;
+    border: 0.5px solid #20b2aa;
+    margin-bottom: 15px;
+    font-size: 18px;
+    padding-left: 10px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#formImage textarea {
+    width: 630px;
+    height: 140px;
+    border: 0.5px solid #20b2aa;
+    margin-bottom: 15px;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-left: 10px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#redChair {
+    height: 55%;
+    width: 55%;
+}
+#right {
+    width: 350px;
+    height: 265px;
+    float: right;
+    position: relative;
+    bottom: 125px;
+}
+#right p {
+    text-align: left;
+    color: #d1d1d1;
+}
+#right input {
+    padding: 0, 15px;
+}
+#submit {
+    width: 300px;
+    background-color: #20b2aa;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+    position: relative;
+    top: 10px;
+    margin-right: 0;
+    font-weight: bold;
+}
+#checkbox {
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+#copyR {
+    margin: 0;
+    color: #cccccc;
+    width: 520px;
+    float: left;
+    font-size: 14px;
+}
+#logo {
+    color: #bdbdbd;
+    font-weight: bold;
+    width: 150px;
+    float: right;
+}
+#logo span {
+    color: #828282;
+}
+#social {
+    width: 200px;
+    float: right;
+    position: relative;
+    bottom: 15px;
 }
