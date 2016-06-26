@@ -14,7 +14,13 @@
             <p id="topLogo">SIT <span class="green">ON</span> OUR <span class="green">CHAIR</span></p>
             <div id="menu">
                 <ul class="main">
-                    <li>o firmie</li>
+                    <li>o firmie
+                      <ul>
+                        <li>Aktualności</li>
+                        <li>Nasz team</li>
+                        <li>Historia</li>
+                      </ul>
+                    </li>
                     <li>galeria</li>
                     <li>kontakt</li>
                 </ul>
@@ -27,17 +33,14 @@
 
     <div id="slider">
         <div class="mainWidth" id="main">
-            <div class="arrow" id="arrow1">
-                < </div>
+            <div class="arrow" id="arrow1"><</div>
                     <div id="leftSlide"><img id="blackChair" src="images/black_chair.png"></div>
                     <div id="rightText">
                         <h1>Sit <span class="green">on</span> our <span class="green">chair</span></h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <div id="seeMore"><a class="button">Zobacz więcej</a></div>
                     </div>
-                    <div class="arrow" id="arrow2">
-                        >
-                    </div>
+                    <div class="arrow" id="arrow2">></div>
             </div>
         </div>
 
@@ -150,7 +153,7 @@
         <div class="mainWidth">
 
             <div class="border2">
-                <h2>Kontakt</h2></div>
+                <h2 class="uppercase">Kontakt</h2></div>
 
             <div id="container">
 
@@ -167,9 +170,12 @@
                 <div id="right">
                     <img id="redChair" src="images/red_chair.png" />
                     <div>
-                        <input type="checkbox" name="select" id="checkbox" />
+                      <input type="checkbox" id="c1" name="cc" />
+                      <label for="c1"><span></span>Zgadzam się na przetwarzanie
+                          <br/>danych osobowych</label>
+                      <!--  <input type="checkbox" name="select" id="checkbox" />
                         <p>Zgadzam się na przetwarzanie
-                            <br/>danych osobowych</p>
+                            <br/>danych osobowych</p>-->
                     </div>
                     <div id="submit" class="uppercase">wyślij</div>
                 </div>
@@ -194,7 +200,7 @@
   </div>
 
 
-
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>
